@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Particle Swarm Fit: Config Class Reference</title>
+<title>Particle Swarm Optimization on Least Square Fitting: Config Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Particle Swarm Fit
+   <div id="projectname">Particle Swarm Optimization on Least Square Fitting
    </div>
   </td>
  </tr>
@@ -77,38 +77,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:abd0c571c116924871e30444b192b792a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_config.html">Config</a> default constructor.  <a href="class_config.html#abd0c571c116924871e30444b192b792a">More...</a><br /></td></tr>
 <tr class="separator:abd0c571c116924871e30444b192b792a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb20780df61735cd881d9b9b1f3ada84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#acb20780df61735cd881d9b9b1f3ada84">Config</a> (int t_nparticles, double t_cognitive, double t_social, double t_inertia, double t_vmax, const <a class="el" href="class_parameters_domain.html">ParametersDomain</a> &amp;t_par_domain)</td></tr>
-<tr class="memdesc:acb20780df61735cd881d9b9b1f3ada84"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_config.html">Config</a> constructor assigning working conditions.  <a href="class_config.html#acb20780df61735cd881d9b9b1f3ada84">More...</a><br /></td></tr>
+<tr class="memdesc:acb20780df61735cd881d9b9b1f3ada84"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_config.html">Config</a> constructor with assignment of the working conditions.  <a href="class_config.html#acb20780df61735cd881d9b9b1f3ada84">More...</a><br /></td></tr>
 <tr class="separator:acb20780df61735cd881d9b9b1f3ada84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa49c9fd480968c6885ca1ba6cfdb0fee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#aa49c9fd480968c6885ca1ba6cfdb0fee">setNumberOfParticles</a> (int t)</td></tr>
 <tr class="memdesc:aa49c9fd480968c6885ca1ba6cfdb0fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the number of particles in the population.  <a href="class_config.html#aa49c9fd480968c6885ca1ba6cfdb0fee">More...</a><br /></td></tr>
 <tr class="separator:aa49c9fd480968c6885ca1ba6cfdb0fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f7eac46197baacb4bbde0e36b47039d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a7f7eac46197baacb4bbde0e36b47039d">setCognitiveParameter</a> (double t)</td></tr>
-<tr class="memdesc:a7f7eac46197baacb4bbde0e36b47039d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the cognitive learning factor, by deafult = 2.0 <br  />
- <br  />
-  <a href="class_config.html#a7f7eac46197baacb4bbde0e36b47039d">More...</a><br /></td></tr>
+<tr class="memdesc:a7f7eac46197baacb4bbde0e36b47039d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the cognitive learning factor, by deafult = 2.0.  <a href="class_config.html#a7f7eac46197baacb4bbde0e36b47039d">More...</a><br /></td></tr>
 <tr class="separator:a7f7eac46197baacb4bbde0e36b47039d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4c56682eb03de5a6af87a16f7217f68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#aa4c56682eb03de5a6af87a16f7217f68">setSocialParameter</a> (double t)</td></tr>
-<tr class="memdesc:aa4c56682eb03de5a6af87a16f7217f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the social learning factor, by deafult = 2.0 <br  />
- <br  />
-  <a href="class_config.html#aa4c56682eb03de5a6af87a16f7217f68">More...</a><br /></td></tr>
+<tr class="memdesc:aa4c56682eb03de5a6af87a16f7217f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the social learning factor, by deafult = 2.0.  <a href="class_config.html#aa4c56682eb03de5a6af87a16f7217f68">More...</a><br /></td></tr>
 <tr class="separator:aa4c56682eb03de5a6af87a16f7217f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57c779eeeb1b501abbd116931158cbd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a57c779eeeb1b501abbd116931158cbd4">setInertia</a> (double t)</td></tr>
-<tr class="memdesc:a57c779eeeb1b501abbd116931158cbd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the inertia factor <br  />
- <br  />
-  <a href="class_config.html#a57c779eeeb1b501abbd116931158cbd4">More...</a><br /></td></tr>
+<tr class="memdesc:a57c779eeeb1b501abbd116931158cbd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the inertia factor.  <a href="class_config.html#a57c779eeeb1b501abbd116931158cbd4">More...</a><br /></td></tr>
 <tr class="separator:a57c779eeeb1b501abbd116931158cbd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e7425f030ce1cee3747288344aafc81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a7e7425f030ce1cee3747288344aafc81">setVMaxParameter</a> (double t)</td></tr>
-<tr class="memdesc:a7e7425f030ce1cee3747288344aafc81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum distance of movement-per-iteration allowed <br  />
+<tr class="memdesc:a7e7425f030ce1cee3747288344aafc81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum distance of movement per iteration allowed. <br  />
  <br  />
   <a href="class_config.html#a7e7425f030ce1cee3747288344aafc81">More...</a><br /></td></tr>
 <tr class="separator:a7e7425f030ce1cee3747288344aafc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56e332b785488630651c3fb7f0111ca4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#a56e332b785488630651c3fb7f0111ca4">setParametersDomain</a> (const <a class="el" href="class_parameters_domain.html">ParametersDomain</a> &amp;t)</td></tr>
-<tr class="memdesc:a56e332b785488630651c3fb7f0111ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the search domain <br  />
- <br  />
-  <a href="class_config.html#a56e332b785488630651c3fb7f0111ca4">More...</a><br /></td></tr>
+<tr class="memdesc:a56e332b785488630651c3fb7f0111ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the search domain.  <a href="class_config.html#a56e332b785488630651c3fb7f0111ca4">More...</a><br /></td></tr>
 <tr class="separator:a56e332b785488630651c3fb7f0111ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee94a0bc81fd8e38f596aad65ac68f03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_config.html#aee94a0bc81fd8e38f596aad65ac68f03">getNumberOfParticles</a> () const</td></tr>
-<tr class="memdesc:aee94a0bc81fd8e38f596aad65ac68f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of particles in the population <br  />
+<tr class="memdesc:aee94a0bc81fd8e38f596aad65ac68f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of particles in the population. <br  />
  <br  />
   <a href="class_config.html#aee94a0bc81fd8e38f596aad65ac68f03">More...</a><br /></td></tr>
 <tr class="separator:aee94a0bc81fd8e38f596aad65ac68f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,15 +221,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_config.html">Config</a> constructor assigning working conditions. </p>
+<p><a class="el" href="class_config.html">Config</a> constructor with assignment of the working conditions. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t_nparticles</td><td>number of particles </td></tr>
-    <tr><td class="paramname">t_cognitive</td><td>cognitive learning factor </td></tr>
-    <tr><td class="paramname">t_social</td><td>social learning factor </td></tr>
-    <tr><td class="paramname">t_inertia</td><td>inertia factor </td></tr>
-    <tr><td class="paramname">t_vmax</td><td>maximum distance of movement-per-iteration allowed </td></tr>
-    <tr><td class="paramname">t_par_domain</td><td>search domain </td></tr>
+    <tr><td class="paramname">t_nparticles</td><td>number of particles. </td></tr>
+    <tr><td class="paramname">t_cognitive</td><td>cognitive learning factor. </td></tr>
+    <tr><td class="paramname">t_social</td><td>social learning factor. </td></tr>
+    <tr><td class="paramname">t_inertia</td><td>inertia factor. </td></tr>
+    <tr><td class="paramname">t_vmax</td><td>maximum distance of movement per iteration allowed. </td></tr>
+    <tr><td class="paramname">t_par_domain</td><td>search domain. </td></tr>
   </table>
   </dd>
 </dl>
@@ -267,7 +259,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the cognitive learning factor <br  />
+<p>Return the cognitive learning factor. <br  />
  <br  />
  Referenced by <a class="el" href="class_population.html#ab68605613683cadc3cd0952dd060b892" title="Set the velocity for each particle in the population.">Population::setVelocity()</a> </p>
 
@@ -295,7 +287,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the intertia factor <br  />
+<p>Return the inertia factor. <br  />
  <br  />
  Referenced by <a class="el" href="class_population.html#ab68605613683cadc3cd0952dd060b892" title="Set the velocity for each particle in the population.">Population::setVelocity()</a> </p>
 
@@ -351,7 +343,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return the number of particles in the population <br  />
+<p>Return the number of particles in the population. <br  />
  <br  />
  </p>
 
@@ -380,7 +372,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the maximum value allowed for the <em>t</em> - parameter<br  />
+<p>Return the maximum value allowed for the <em>t</em> - parameter. <br  />
  <br  />
  Referenced by <a class="el" href="class_population.html#a4a2d5a08f446c0c6e14e0c60385087a3" title="Population initialization with random starting positions and random velocities.">Population::init()</a>, <a class="el" href="class_population.html#aabac78c1660156842135abfb68f39399" title="Move all the particles into a new position.">Population::moveParticles()</a> </p>
 
@@ -409,7 +401,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the minimum value allowed for the <em>t</em> - parameter <br  />
+<p>Return the minimum value allowed for the <em>t</em> - parameter. <br  />
  <br  />
  Referenced by <a class="el" href="class_population.html#a4a2d5a08f446c0c6e14e0c60385087a3" title="Population initialization with random starting positions and random velocities.">Population::init()</a>, <a class="el" href="class_population.html#aabac78c1660156842135abfb68f39399" title="Move all the particles into a new position.">Population::moveParticles()</a> </p>
 
@@ -437,7 +429,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the social learning factor <br  />
+<p>Return the social learning factor. <br  />
  <br  />
  Referenced by <a class="el" href="class_population.html#ab68605613683cadc3cd0952dd060b892" title="Set the velocity for each particle in the population.">Population::setVelocity()</a> </p>
 
@@ -465,7 +457,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the maximum distance of movement-per-iteration allowed <br  />
+<p>Return the maximum distance of movement per iteration allowed. <br  />
  <br  />
  Referenced by <a class="el" href="class_population.html#ab68605613683cadc3cd0952dd060b892" title="Set the velocity for each particle in the population.">Population::setVelocity()</a> </p>
 
@@ -495,9 +487,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set the cognitive learning factor, by deafult = 2.0 <br  />
- <br  />
- </p>
+<p>Set the cognitive learning factor, by deafult = 2.0. </p>
 
 </div>
 </div>
@@ -525,9 +515,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set the inertia factor <br  />
- <br  />
- </p>
+<p>Set the inertia factor. </p>
 
 </div>
 </div>
@@ -583,9 +571,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set the search domain <br  />
- <br  />
- </p>
+<p>Set the search domain. </p>
 
 </div>
 </div>
@@ -613,9 +599,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set the social learning factor, by deafult = 2.0 <br  />
- <br  />
- </p>
+<p>Set the social learning factor, by deafult = 2.0. </p>
 
 </div>
 </div>
@@ -643,7 +627,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set the maximum distance of movement-per-iteration allowed <br  />
+<p>Set the maximum distance of movement per iteration allowed. <br  />
  <br  />
  </p>
 
@@ -669,7 +653,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Cognitive learning factor </p>
+<p>Cognitive learning factor. </p>
 
 </div>
 </div>
@@ -692,7 +676,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Inertia factor </p>
+<p>Inertia factor. </p>
 
 </div>
 </div>
@@ -715,7 +699,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Number of particles </p>
+<p>Number of particles. </p>
 
 </div>
 </div>
@@ -738,7 +722,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>search domain </p>
+<p>Search domain. </p>
 
 </div>
 </div>
@@ -761,7 +745,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Social learning factor </p>
+<p>Social learning factor. </p>
 
 </div>
 </div>
@@ -784,7 +768,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Maximum distance of movement-per-iteration </p>
+<p>Maximum distance of movement per iteration. </p>
 
 </div>
 </div>

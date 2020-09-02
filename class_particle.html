@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Particle Swarm Fit: Particle Class Reference</title>
+<title>Particle Swarm Optimization on Least Square Fitting: Particle Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Particle Swarm Fit
+   <div id="projectname">Particle Swarm Optimization on Least Square Fitting
    </div>
   </td>
  </tr>
@@ -75,7 +75,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2ce8c2d8fd775ca78067be6a9191c3bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle.html#a2ce8c2d8fd775ca78067be6a9191c3bb">Particle</a> (int n)</td></tr>
-<tr class="memdesc:a2ce8c2d8fd775ca78067be6a9191c3bb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_particle.html">Particle</a> default constructor for an <em>n</em> - dimensional search space (- <em>n</em> fitting parameters)  <a href="class_particle.html#a2ce8c2d8fd775ca78067be6a9191c3bb">More...</a><br /></td></tr>
+<tr class="memdesc:a2ce8c2d8fd775ca78067be6a9191c3bb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_particle.html">Particle</a> default constructor for a <em>n</em> - dimensional search space (<em>n</em> fitting parameters).  <a href="class_particle.html#a2ce8c2d8fd775ca78067be6a9191c3bb">More...</a><br /></td></tr>
 <tr class="separator:a2ce8c2d8fd775ca78067be6a9191c3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2ae8b28758b4334e38319849555f5a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle.html#aa2ae8b28758b4334e38319849555f5a4">setPosition</a> (size_t t, double)</td></tr>
 <tr class="separator:aa2ae8b28758b4334e38319849555f5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,7 +118,7 @@ Private Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:ab039d9d7b45ed28780d658099ee94942"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle.html#ab039d9d7b45ed28780d658099ee94942">operator&lt;&lt;</a> (std::ostream &amp;t_os, <a class="el" href="class_particle.html">Particle</a> &amp;t_rhs)</td></tr>
-<tr class="memdesc:ab039d9d7b45ed28780d658099ee94942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show on video the characteristics of a particle.  <a href="class_particle.html#ab039d9d7b45ed28780d658099ee94942">More...</a><br /></td></tr>
+<tr class="memdesc:ab039d9d7b45ed28780d658099ee94942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show on video the coordinates of the best position found.  <a href="class_particle.html#ab039d9d7b45ed28780d658099ee94942">More...</a><br /></td></tr>
 <tr class="separator:ab039d9d7b45ed28780d658099ee94942"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa44ed82489fb16156d107d22f23cf47e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_particle.html#aa44ed82489fb16156d107d22f23cf47e">operator&lt;</a> (const <a class="el" href="class_particle.html">Particle</a> &amp;l, const <a class="el" href="class_particle.html">Particle</a> &amp;r)</td></tr>
 <tr class="memdesc:aa44ed82489fb16156d107d22f23cf47e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two particles' best cost found.  <a href="class_particle.html#aa44ed82489fb16156d107d22f23cf47e">More...</a><br /></td></tr>
@@ -141,7 +141,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_particle.html">Particle</a> default constructor for an <em>n</em> - dimensional search space (- <em>n</em> fitting parameters) </p>
+<p><a class="el" href="class_particle.html">Particle</a> default constructor for a <em>n</em> - dimensional search space (<em>n</em> fitting parameters). </p>
 
 </div>
 </div>
@@ -160,9 +160,9 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the cost computed using the best position found by the particle <br  />
+<p>Return the best cost found by the particle. <br  />
  <br  />
- Referenced by <a class="el" href="class_population.html#a1adfcb402e6cd9d003e58c6a382d06c4" title="Set the best cost for each particle if the new position is better.">Population::setBestCost()</a> </p>
+ Referenced by <a class="el" href="class_population.html#a1adfcb402e6cd9d003e58c6a382d06c4" title="Update the best position found for each particle.">Population::setBestCost()</a> </p>
 
 </div>
 </div>
@@ -181,7 +181,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the <em>t</em> - coordinate of the best position found by the particle <br  />
+<p>Return the <em>t</em> - coordinate of the best position found by the particle. <br  />
  <br  />
  Referenced by <a class="el" href="class_population.html#ab68605613683cadc3cd0952dd060b892" title="Set the velocity for each particle in the population.">Population::setVelocity()</a> </p>
 
@@ -201,9 +201,9 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the cost computed using the current position of the particle <br  />
+<p>Return the cost of the particle. <br  />
  <br  />
- Referenced by <a class="el" href="class_population.html#a1adfcb402e6cd9d003e58c6a382d06c4" title="Set the best cost for each particle if the new position is better.">Population::setBestCost()</a> </p>
+ Referenced by <a class="el" href="class_population.html#a1adfcb402e6cd9d003e58c6a382d06c4" title="Update the best position found for each particle.">Population::setBestCost()</a> </p>
 
 </div>
 </div>
@@ -221,7 +221,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the the number of dimensions of the search space <br  />
+<p>Return the number of dimensions of the search space. <br  />
  <br  />
  Referenced by <a class="el" href="class_population.html#a4a2d5a08f446c0c6e14e0c60385087a3" title="Population initialization with random starting positions and random velocities.">Population::init()</a>, <a class="el" href="class_population.html#ab68605613683cadc3cd0952dd060b892" title="Set the velocity for each particle in the population.">Population::setVelocity()</a>, <a class="el" href="class_population.html#aabac78c1660156842135abfb68f39399" title="Move all the particles into a new position.">Population::moveParticles()</a> </p>
 
@@ -242,7 +242,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the <em>t</em> - coordinate of the particle in the current position <br  />
+<p>Return the <em>t</em> - coordinate of the particle in the current position. <br  />
  <br  />
  Referenced by <a class="el" href="class_population.html#ab68605613683cadc3cd0952dd060b892" title="Set the velocity for each particle in the population.">Population::setVelocity()</a>, <a class="el" href="class_population.html#aabac78c1660156842135abfb68f39399" title="Move all the particles into a new position.">Population::moveParticles()</a> </p>
 
@@ -263,7 +263,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the <em>t</em> - component of the velocity <br  />
+<p>Return the <em>t</em> - component of the velocity. <br  />
  <br  />
  Referenced by <a class="el" href="class_population.html#ab68605613683cadc3cd0952dd060b892" title="Set the velocity for each particle in the population.">Population::setVelocity()</a>, <a class="el" href="class_population.html#aabac78c1660156842135abfb68f39399" title="Move all the particles into a new position.">Population::moveParticles()</a> </p>
 
@@ -283,9 +283,9 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the best position recorded by the particle if the current one is better <br  />
+<p>Update the best position found. <br  />
  <br  />
- Referenced by <a class="el" href="class_population.html#a1adfcb402e6cd9d003e58c6a382d06c4" title="Set the best cost for each particle if the new position is better.">Population::setBestCost()</a> </p>
+ Referenced by <a class="el" href="class_population.html#a1adfcb402e6cd9d003e58c6a382d06c4" title="Update the best position found for each particle.">Population::setBestCost()</a> </p>
 
 </div>
 </div>
@@ -304,7 +304,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the cost of the current position <br  />
+<p>Set the cost of the current position. <br  />
  <br  />
  Referenced by <a class="el" href="class_evaluate.html#aa98fc7a4103f1da81bdcf00550589f8a">Evaluate::computeCostFit()</a> </p>
 
@@ -325,7 +325,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the parameters of the model using the coordinates of the current position <br  />
+<p>Set the parameters of the model equal to the coordinates of the current position. <br  />
  <br  />
  Referenced by <a class="el" href="class_evaluate.html#aa98fc7a4103f1da81bdcf00550589f8a">Evaluate::computeCostFit()</a> </p>
 
@@ -346,9 +346,9 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the parameters of the model with the coordinates of the best position ever found by the particle <br  />
+<p>Set the parameters of the model equal to the coordinates of the best position found by the particle. <br  />
  <br  />
- Referenced by <a class="el" href="class_population.html#ae5b9d7dd3b82a6a21d43b43c1150acae" title="Show on display the model with the best set of parameter found and the normalized data in the backgro...">Population::draw()</a>; </p>
+ Referenced by <a class="el" href="class_population.html#ae5b9d7dd3b82a6a21d43b43c1150acae" title="Show on display the model with the best set of parameter found and the normalized data on the backgro...">Population::draw()</a>; </p>
 
 </div>
 </div>
@@ -377,7 +377,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the particle's <em>t</em> - coordinate <br  />
+<p>Set the <em>t</em> - coordinate. <br  />
  <br  />
  Referenced by <a class="el" href="class_population.html#a4a2d5a08f446c0c6e14e0c60385087a3" title="Population initialization with random starting positions and random velocities.">Population::init()</a>, <a class="el" href="class_population.html#aabac78c1660156842135abfb68f39399" title="Move all the particles into a new position.">Population::moveParticles()</a> </p>
 
@@ -408,7 +408,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the velocity <br  />
+<p>Set the <em>t</em> - component of the velocity. <br  />
  <br  />
  Referenced by <a class="el" href="class_population.html#ab68605613683cadc3cd0952dd060b892" title="Set the velocity for each particle in the population.">Population::setVelocity()</a>, <a class="el" href="class_population.html#a4a2d5a08f446c0c6e14e0c60385087a3" title="Population initialization with random starting positions and random velocities.">Population::init()</a> </p>
 
@@ -487,7 +487,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Show on video the characteristics of a particle. </p>
+<p>Show on video the coordinates of the best position found. </p>
 
 </div>
 </div>
@@ -511,7 +511,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="class_particle.html">Particle</a>'s cost evaluated in the current position </p>
+<p><a class="el" href="class_particle.html">Particle</a>'s cost evaluated in the current position. </p>
 
 </div>
 </div>
@@ -534,7 +534,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="class_particle.html">Particle</a>'s best cost found </p>
+<p><a class="el" href="class_particle.html">Particle</a>'s best cost found. </p>
 
 </div>
 </div>
@@ -557,7 +557,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Vector storing the coordinates of the current position </p>
+<p>Vector storing the coordinates of the current position. </p>
 
 </div>
 </div>
@@ -580,7 +580,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Vector storing the coordinates of the best position found </p>
+<p>Vector storing the coordinates of the best position found. </p>
 
 </div>
 </div>
@@ -603,7 +603,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Vector storing the velocity components </p>
+<p>Vector storing the velocity components. </p>
 
 </div>
 </div>

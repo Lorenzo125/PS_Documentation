@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Particle Swarm Fit: include/Population.h Source File</title>
+<title>Particle Swarm Optimization on Least Square Fitting: include/Population.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Particle Swarm Fit
+   <div id="projectname">Particle Swarm Optimization on Least Square Fitting
    </div>
   </td>
  </tr>
@@ -105,44 +105,44 @@ $(function() {
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_population.html#a5c106029ee56a4c31c83cf9090eaf97a">   47</a></span>&#160;   <a class="code" href="class_particle.html">Particle</a> &amp;<a class="code" href="class_population.html#a5c106029ee56a4c31c83cf9090eaf97a">operator[]</a>(<span class="keywordtype">size_t</span> t) { <span class="keywordflow">return</span> <a class="code" href="class_population.html#a84ec275eac121fb7cc670d15865e7ba1">m_particle</a>[t]; };</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_population.html#a50bf2d69e02685712d6fc4cd5a1de1d5">   51</a></span>&#160;   <span class="keyword">friend</span> std::ostream &amp;<a class="code" href="class_population.html#a50bf2d69e02685712d6fc4cd5a1de1d5">operator&lt;&lt;</a>(std::ostream &amp;t_os, <a class="code" href="class_population.html">Population</a> &amp;t_rhs)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;   {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="comment">/*os &lt;&lt; &quot;--- Population ---\n&quot;;</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">      for (size_t i = 0; i &lt; rhs.size(); ++i) { //stampa tutta la popolazione</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">      os &lt;&lt; t_rhs[i];</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">    };*/</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      t_os &lt;&lt; t_rhs[0];</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      t_os &lt;&lt; <span class="stringliteral">&quot;------------------\n&quot;</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">return</span> t_os;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_population.html#a84ec275eac121fb7cc670d15865e7ba1">   61</a></span>&#160;   };</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;   std::vector&lt;Particle&gt; <a class="code" href="class_population.html#a84ec275eac121fb7cc670d15865e7ba1">m_particle</a>; </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_population.html#ac4d7afed6f406396d79547f531f58dff">   65</a></span>&#160;   <a class="code" href="class_config.html">Config</a>                <a class="code" href="class_population.html#ac4d7afed6f406396d79547f531f58dff">m_config</a>;   </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_population.html#afb2bb8f017866f88f7f68e54dbadeb27">   66</a></span>&#160;   std::mt19937          <a class="code" href="class_population.html#afb2bb8f017866f88f7f68e54dbadeb27">m_mt</a>;       </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_population.html#a50bf2d69e02685712d6fc4cd5a1de1d5">   50</a></span>&#160;   <span class="keyword">friend</span> std::ostream &amp;<a class="code" href="class_population.html#a50bf2d69e02685712d6fc4cd5a1de1d5">operator&lt;&lt;</a>(std::ostream &amp;t_os, <a class="code" href="class_population.html">Population</a> &amp;t_rhs)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;   {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="comment">/*os &lt;&lt; &quot;--- Population ---\n&quot;;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">      for (size_t i = 0; i &lt; rhs.size(); ++i) {</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">      os &lt;&lt; t_rhs[i];</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">    };*/</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      t_os &lt;&lt; t_rhs[0];</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      t_os &lt;&lt; <span class="stringliteral">&quot;------------------\n&quot;</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">return</span> t_os;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_population.html#a84ec275eac121fb7cc670d15865e7ba1">   60</a></span>&#160;   };</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;   std::vector&lt;Particle&gt; <a class="code" href="class_population.html#a84ec275eac121fb7cc670d15865e7ba1">m_particle</a>; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_population.html#ac4d7afed6f406396d79547f531f58dff">   64</a></span>&#160;   <a class="code" href="class_config.html">Config</a>                <a class="code" href="class_population.html#ac4d7afed6f406396d79547f531f58dff">m_config</a>;   </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_population.html#afb2bb8f017866f88f7f68e54dbadeb27">   65</a></span>&#160;   std::mt19937          <a class="code" href="class_population.html#afb2bb8f017866f88f7f68e54dbadeb27">m_mt</a>;       </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_population_html_a50bf2d69e02685712d6fc4cd5a1de1d5"><div class="ttname"><a href="class_population.html#a50bf2d69e02685712d6fc4cd5a1de1d5">Population::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;t_os, Population &amp;t_rhs)</div><div class="ttdef"><b>Definition:</b> Population.h:51</div></div>
+<div class="ttc" id="aclass_population_html_a50bf2d69e02685712d6fc4cd5a1de1d5"><div class="ttname"><a href="class_population.html#a50bf2d69e02685712d6fc4cd5a1de1d5">Population::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;t_os, Population &amp;t_rhs)</div><div class="ttdoc">Show on video the coordinates of the best position found.</div><div class="ttdef"><b>Definition:</b> Population.h:50</div></div>
 <div class="ttc" id="aclass_population_html_aee1e5343d88cbfb4594dde4b0e6bb574"><div class="ttname"><a href="class_population.html#aee1e5343d88cbfb4594dde4b0e6bb574">Population::sort</a></div><div class="ttdeci">void sort()</div><div class="ttdoc">Sort the particles according to their best cost found.</div><div class="ttdef"><b>Definition:</b> Population.cc:25</div></div>
 <div class="ttc" id="aclass_particle_html"><div class="ttname"><a href="class_particle.html">Particle</a></div><div class="ttdef"><b>Definition:</b> Particle.h:9</div></div>
-<div class="ttc" id="aclass_population_html_a1adfcb402e6cd9d003e58c6a382d06c4"><div class="ttname"><a href="class_population.html#a1adfcb402e6cd9d003e58c6a382d06c4">Population::setBestCost</a></div><div class="ttdeci">void setBestCost()</div><div class="ttdoc">Set the best cost for each particle if the new position is better.</div><div class="ttdef"><b>Definition:</b> Population.cc:67</div></div>
-<div class="ttc" id="aclass_population_html_a84ec275eac121fb7cc670d15865e7ba1"><div class="ttname"><a href="class_population.html#a84ec275eac121fb7cc670d15865e7ba1">Population::m_particle</a></div><div class="ttdeci">std::vector&lt; Particle &gt; m_particle</div><div class="ttdef"><b>Definition:</b> Population.h:61</div></div>
+<div class="ttc" id="aclass_population_html_a1adfcb402e6cd9d003e58c6a382d06c4"><div class="ttname"><a href="class_population.html#a1adfcb402e6cd9d003e58c6a382d06c4">Population::setBestCost</a></div><div class="ttdeci">void setBestCost()</div><div class="ttdoc">Update the best position found for each particle.</div><div class="ttdef"><b>Definition:</b> Population.cc:67</div></div>
+<div class="ttc" id="aclass_population_html_a84ec275eac121fb7cc670d15865e7ba1"><div class="ttname"><a href="class_population.html#a84ec275eac121fb7cc670d15865e7ba1">Population::m_particle</a></div><div class="ttdeci">std::vector&lt; Particle &gt; m_particle</div><div class="ttdef"><b>Definition:</b> Population.h:60</div></div>
 <div class="ttc" id="aclass_config_html"><div class="ttname"><a href="class_config.html">Config</a></div><div class="ttdef"><b>Definition:</b> Config.h:7</div></div>
 <div class="ttc" id="a_config_8h_html"><div class="ttname"><a href="_config_8h.html">Config.h</a></div></div>
 <div class="ttc" id="aclass_population_html_aa4f4e98fe36a1d16348fcaa4b55c338b"><div class="ttname"><a href="class_population.html#aa4f4e98fe36a1d16348fcaa4b55c338b">Population::getConfig</a></div><div class="ttdeci">Config &amp; getConfig()</div><div class="ttdoc">Return the configuration of the population.</div><div class="ttdef"><b>Definition:</b> Population.h:41</div></div>
-<div class="ttc" id="aclass_population_html_ac4d7afed6f406396d79547f531f58dff"><div class="ttname"><a href="class_population.html#ac4d7afed6f406396d79547f531f58dff">Population::m_config</a></div><div class="ttdeci">Config m_config</div><div class="ttdef"><b>Definition:</b> Population.h:65</div></div>
+<div class="ttc" id="aclass_population_html_ac4d7afed6f406396d79547f531f58dff"><div class="ttname"><a href="class_population.html#ac4d7afed6f406396d79547f531f58dff">Population::m_config</a></div><div class="ttdeci">Config m_config</div><div class="ttdef"><b>Definition:</b> Population.h:64</div></div>
 <div class="ttc" id="a_particle_8h_html"><div class="ttname"><a href="_particle_8h.html">Particle.h</a></div></div>
 <div class="ttc" id="aclass_population_html_aabac78c1660156842135abfb68f39399"><div class="ttname"><a href="class_population.html#aabac78c1660156842135abfb68f39399">Population::moveParticles</a></div><div class="ttdeci">void moveParticles()</div><div class="ttdoc">Move all the particles into a new position.</div><div class="ttdef"><b>Definition:</b> Population.cc:53</div></div>
 <div class="ttc" id="aclass_population_html_a5c106029ee56a4c31c83cf9090eaf97a"><div class="ttname"><a href="class_population.html#a5c106029ee56a4c31c83cf9090eaf97a">Population::operator[]</a></div><div class="ttdeci">Particle &amp; operator[](size_t t)</div><div class="ttdoc">Return the t - particle.</div><div class="ttdef"><b>Definition:</b> Population.h:47</div></div>
 <div class="ttc" id="aclass_population_html_ab68605613683cadc3cd0952dd060b892"><div class="ttname"><a href="class_population.html#ab68605613683cadc3cd0952dd060b892">Population::setVelocity</a></div><div class="ttdeci">void setVelocity()</div><div class="ttdoc">Set the velocity for each particle in the population.</div><div class="ttdef"><b>Definition:</b> Population.cc:30</div></div>
-<div class="ttc" id="aclass_population_html_ae5b9d7dd3b82a6a21d43b43c1150acae"><div class="ttname"><a href="class_population.html#ae5b9d7dd3b82a6a21d43b43c1150acae">Population::draw</a></div><div class="ttdeci">void draw(TH1F *t_data, TF1 *t_model)</div><div class="ttdoc">Show on display the model with the best set of parameter found and the normalized data in the backgro...</div><div class="ttdef"><b>Definition:</b> Population.cc:76</div></div>
+<div class="ttc" id="aclass_population_html_ae5b9d7dd3b82a6a21d43b43c1150acae"><div class="ttname"><a href="class_population.html#ae5b9d7dd3b82a6a21d43b43c1150acae">Population::draw</a></div><div class="ttdeci">void draw(TH1F *t_data, TF1 *t_model)</div><div class="ttdoc">Show on display the model with the best set of parameter found and the normalized data on the backgro...</div><div class="ttdef"><b>Definition:</b> Population.cc:76</div></div>
 <div class="ttc" id="aclass_population_html_a71a9278adc6877d0184afddbf0830467"><div class="ttname"><a href="class_population.html#a71a9278adc6877d0184afddbf0830467">Population::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdef"><b>Definition:</b> Population.cc:20</div></div>
-<div class="ttc" id="aclass_population_html_afb2bb8f017866f88f7f68e54dbadeb27"><div class="ttname"><a href="class_population.html#afb2bb8f017866f88f7f68e54dbadeb27">Population::m_mt</a></div><div class="ttdeci">std::mt19937 m_mt</div><div class="ttdef"><b>Definition:</b> Population.h:66</div></div>
+<div class="ttc" id="aclass_population_html_afb2bb8f017866f88f7f68e54dbadeb27"><div class="ttname"><a href="class_population.html#afb2bb8f017866f88f7f68e54dbadeb27">Population::m_mt</a></div><div class="ttdeci">std::mt19937 m_mt</div><div class="ttdef"><b>Definition:</b> Population.h:65</div></div>
 <div class="ttc" id="aclass_population_html"><div class="ttname"><a href="class_population.html">Population</a></div><div class="ttdef"><b>Definition:</b> Population.h:13</div></div>
-<div class="ttc" id="aclass_population_html_a52d0e4ded301b31dc11c1d1daf1663fa"><div class="ttname"><a href="class_population.html#a52d0e4ded301b31dc11c1d1daf1663fa">Population::Population</a></div><div class="ttdeci">Population(const Config &amp;t_config)</div><div class="ttdoc">Population default constructor assigning the configuration Config.</div><div class="ttdef"><b>Definition:</b> Population.cc:4</div></div>
+<div class="ttc" id="aclass_population_html_a52d0e4ded301b31dc11c1d1daf1663fa"><div class="ttname"><a href="class_population.html#a52d0e4ded301b31dc11c1d1daf1663fa">Population::Population</a></div><div class="ttdeci">Population(const Config &amp;t_config)</div><div class="ttdoc">Population default constructor.</div><div class="ttdef"><b>Definition:</b> Population.cc:4</div></div>
 <div class="ttc" id="aclass_population_html_a4a2d5a08f446c0c6e14e0c60385087a3"><div class="ttname"><a href="class_population.html#a4a2d5a08f446c0c6e14e0c60385087a3">Population::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">Population initialization with random starting positions and random velocities.</div><div class="ttdef"><b>Definition:</b> Population.cc:8</div></div>
 <div class="ttc" id="aclass_population_html_aea76b8cc9a9e174a2575e9336b449c87"><div class="ttname"><a href="class_population.html#aea76b8cc9a9e174a2575e9336b449c87">Population::accessParticle</a></div><div class="ttdeci">Particle &amp; accessParticle(size_t t)</div><div class="ttdoc">Return the t - particle.</div><div class="ttdef"><b>Definition:</b> Population.h:44</div></div>
 <!-- start footer part -->

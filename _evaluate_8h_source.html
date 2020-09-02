@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Particle Swarm Fit: include/Evaluate.h Source File</title>
+<title>Particle Swarm Optimization on Least Square Fitting: include/Evaluate.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Particle Swarm Fit
+   <div id="projectname">Particle Swarm Optimization on Least Square Fitting
    </div>
   </td>
  </tr>
@@ -69,14 +69,14 @@ $(function() {
 <div class="title">Evaluate.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_evaluate_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;n#ifndef <a class="code" href="_evaluate_8h.html#adb281337e2c5479d3fcdbd0bc7a4ab4d">Evaluate_h</a></div>
+<a href="_evaluate_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;n #ifndef <a class="code" href="_evaluate_8h.html#adb281337e2c5479d3fcdbd0bc7a4ab4d">Evaluate_h</a></div>
 <div class="line"><a name="l00002"></a><span class="lineno"><a class="line" href="_evaluate_8h.html#adb281337e2c5479d3fcdbd0bc7a4ab4d">    2</a></span>&#160;<span class="preprocessor">#define Evaluate_h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;random&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;TH1F.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_population_8h.html">Population.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_evaluate.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_evaluate.html">Evaluate</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_evaluate.html">    8</a></span>&#160;   <span class="keyword">class </span><a class="code" href="class_evaluate.html">Evaluate</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_evaluate.html#aa98fc7a4103f1da81bdcf00550589f8a">   12</a></span>&#160;   <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_evaluate.html#aa98fc7a4103f1da81bdcf00550589f8a">computeCostFit</a>(<a class="code" href="class_particle.html">Particle</a> &amp;t_par, TH1F *t_data, TF1 *t_model, <span class="keywordtype">double</span> t_Ndof)</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;   {</div>
@@ -111,7 +111,7 @@ $(function() {
 <div class="ttc" id="aclass_particle_html_a6b1a06ce1da037c4c391b6f5861b04f5"><div class="ttname"><a href="class_particle.html#a6b1a06ce1da037c4c391b6f5861b04f5">Particle::setCost</a></div><div class="ttdeci">void setCost(double)</div><div class="ttdef"><b>Definition:</b> Particle.cc:19</div></div>
 <div class="ttc" id="a_evaluate_8h_html_adb281337e2c5479d3fcdbd0bc7a4ab4d"><div class="ttname"><a href="_evaluate_8h.html#adb281337e2c5479d3fcdbd0bc7a4ab4d">Evaluate_h</a></div><div class="ttdeci">#define Evaluate_h</div><div class="ttdef"><b>Definition:</b> Evaluate.h:2</div></div>
 <div class="ttc" id="aclass_population_html_a71a9278adc6877d0184afddbf0830467"><div class="ttname"><a href="class_population.html#a71a9278adc6877d0184afddbf0830467">Population::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdef"><b>Definition:</b> Population.cc:20</div></div>
-<div class="ttc" id="aclass_evaluate_html_a16a1a916e5a8faa0cb0d208cd4e1a3c7"><div class="ttname"><a href="class_evaluate.html#a16a1a916e5a8faa0cb0d208cd4e1a3c7">Evaluate::computeCostFit</a></div><div class="ttdeci">static void computeCostFit(Population &amp;t_pop, TH1F *t_data, TF1 *t_model, double t_Ndof)</div><div class="ttdoc">Compute the chi2/Ndof for each particle in the population</div><div class="ttdef"><b>Definition:</b> Evaluate.h:29</div></div>
+<div class="ttc" id="aclass_evaluate_html_a16a1a916e5a8faa0cb0d208cd4e1a3c7"><div class="ttname"><a href="class_evaluate.html#a16a1a916e5a8faa0cb0d208cd4e1a3c7">Evaluate::computeCostFit</a></div><div class="ttdeci">static void computeCostFit(Population &amp;t_pop, TH1F *t_data, TF1 *t_model, double t_Ndof)</div><div class="ttdoc">Compute the chi^2/NDOF for each particle in the population.</div><div class="ttdef"><b>Definition:</b> Evaluate.h:29</div></div>
 <div class="ttc" id="aclass_population_html"><div class="ttname"><a href="class_population.html">Population</a></div><div class="ttdef"><b>Definition:</b> Population.h:13</div></div>
 <div class="ttc" id="aclass_evaluate_html"><div class="ttname"><a href="class_evaluate.html">Evaluate</a></div><div class="ttdef"><b>Definition:</b> Evaluate.h:8</div></div>
 <!-- start footer part -->

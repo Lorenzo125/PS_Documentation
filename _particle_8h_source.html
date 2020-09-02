@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Particle Swarm Fit: include/Particle.h Source File</title>
+<title>Particle Swarm Optimization on Least Square Fitting: include/Particle.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Particle Swarm Fit
+   <div id="projectname">Particle Swarm Optimization on Least Square Fitting
    </div>
   </td>
  </tr>
@@ -138,7 +138,7 @@ $(function() {
 <div class="ttc" id="aclass_particle_html"><div class="ttname"><a href="class_particle.html">Particle</a></div><div class="ttdef"><b>Definition:</b> Particle.h:9</div></div>
 <div class="ttc" id="aclass_particle_html_a800422109fbfbfc7de3b50f05c523ffc"><div class="ttname"><a href="class_particle.html#a800422109fbfbfc7de3b50f05c523ffc">Particle::setModel</a></div><div class="ttdeci">void setModel(TF1 *)</div><div class="ttdef"><b>Definition:</b> Particle.cc:29</div></div>
 <div class="ttc" id="aclass_particle_html_aac4b658999966c49fd730a92ef146214"><div class="ttname"><a href="class_particle.html#aac4b658999966c49fd730a92ef146214">Particle::getVelocity</a></div><div class="ttdeci">double getVelocity(size_t t)</div><div class="ttdef"><b>Definition:</b> Particle.cc:58</div></div>
-<div class="ttc" id="aclass_particle_html_a2ce8c2d8fd775ca78067be6a9191c3bb"><div class="ttname"><a href="class_particle.html#a2ce8c2d8fd775ca78067be6a9191c3bb">Particle::Particle</a></div><div class="ttdeci">Particle(int n)</div><div class="ttdoc">Particle default constructor for an n - dimensional search space (- n fitting parameters)</div><div class="ttdef"><b>Definition:</b> Particle.cc:4</div></div>
+<div class="ttc" id="aclass_particle_html_a2ce8c2d8fd775ca78067be6a9191c3bb"><div class="ttname"><a href="class_particle.html#a2ce8c2d8fd775ca78067be6a9191c3bb">Particle::Particle</a></div><div class="ttdeci">Particle(int n)</div><div class="ttdoc">Particle default constructor for a n - dimensional search space (n fitting parameters).</div><div class="ttdef"><b>Definition:</b> Particle.cc:4</div></div>
 <div class="ttc" id="aclass_particle_html_a3b19401adc03740daca967a0b5768bf4"><div class="ttname"><a href="class_particle.html#a3b19401adc03740daca967a0b5768bf4">Particle::m_velocity</a></div><div class="ttdeci">std::vector&lt; double &gt; m_velocity</div><div class="ttdef"><b>Definition:</b> Particle.h:86</div></div>
 <div class="ttc" id="aclass_particle_html_aafe22c280a1dd9970aba8f1ef77abd37"><div class="ttname"><a href="class_particle.html#aafe22c280a1dd9970aba8f1ef77abd37">Particle::getPosition</a></div><div class="ttdeci">double getPosition(size_t t)</div><div class="ttdef"><b>Definition:</b> Particle.cc:48</div></div>
 <div class="ttc" id="aclass_particle_html_a6b1a06ce1da037c4c391b6f5861b04f5"><div class="ttname"><a href="class_particle.html#a6b1a06ce1da037c4c391b6f5861b04f5">Particle::setCost</a></div><div class="ttdeci">void setCost(double)</div><div class="ttdef"><b>Definition:</b> Particle.cc:19</div></div>
@@ -153,7 +153,7 @@ $(function() {
 <div class="ttc" id="aclass_particle_html_a41ea9fe8f8fd76a05c9e03ae77003781"><div class="ttname"><a href="class_particle.html#a41ea9fe8f8fd76a05c9e03ae77003781">Particle::setVelocity</a></div><div class="ttdeci">void setVelocity(size_t, double)</div><div class="ttdef"><b>Definition:</b> Particle.cc:24</div></div>
 <div class="ttc" id="aclass_particle_html_a399e6c46240fad8b3ba899303ed36594"><div class="ttname"><a href="class_particle.html#a399e6c46240fad8b3ba899303ed36594">Particle::setBestPosition</a></div><div class="ttdeci">void setBestPosition()</div><div class="ttdef"><b>Definition:</b> Particle.cc:11</div></div>
 <div class="ttc" id="aclass_particle_html_abe9663402c2b9ef19e920857a80f3711"><div class="ttname"><a href="class_particle.html#abe9663402c2b9ef19e920857a80f3711">Particle::getCost</a></div><div class="ttdeci">double getCost()</div><div class="ttdef"><b>Definition:</b> Particle.cc:63</div></div>
-<div class="ttc" id="aclass_particle_html_ab039d9d7b45ed28780d658099ee94942"><div class="ttname"><a href="class_particle.html#ab039d9d7b45ed28780d658099ee94942">Particle::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;t_os, Particle &amp;t_rhs)</div><div class="ttdoc">Show on video the characteristics of a particle.</div><div class="ttdef"><b>Definition:</b> Particle.h:63</div></div>
+<div class="ttc" id="aclass_particle_html_ab039d9d7b45ed28780d658099ee94942"><div class="ttname"><a href="class_particle.html#ab039d9d7b45ed28780d658099ee94942">Particle::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;t_os, Particle &amp;t_rhs)</div><div class="ttdoc">Show on video the coordinates of the best position found.</div><div class="ttdef"><b>Definition:</b> Particle.h:63</div></div>
 <div class="ttc" id="aclass_particle_html_af83d9847a6bc169f62d6bda96198dd2b"><div class="ttname"><a href="class_particle.html#af83d9847a6bc169f62d6bda96198dd2b">Particle::m_cost</a></div><div class="ttdeci">double m_cost</div><div class="ttdef"><b>Definition:</b> Particle.h:87</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

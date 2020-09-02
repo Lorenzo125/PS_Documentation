@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Particle Swarm Fit: Evaluate Class Reference</title>
+<title>Particle Swarm Optimization on Least Square Fitting: Evaluate Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Particle Swarm Fit
+   <div id="projectname">Particle Swarm Optimization on Least Square Fitting
    </div>
   </td>
  </tr>
@@ -75,9 +75,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa98fc7a4103f1da81bdcf00550589f8a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_evaluate.html#aa98fc7a4103f1da81bdcf00550589f8a">computeCostFit</a> (<a class="el" href="class_particle.html">Particle</a> &amp;t_par, TH1F *t_data, TF1 *t_model, double t_Ndof)</td></tr>
 <tr class="separator:aa98fc7a4103f1da81bdcf00550589f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16a1a916e5a8faa0cb0d208cd4e1a3c7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_evaluate.html#a16a1a916e5a8faa0cb0d208cd4e1a3c7">computeCostFit</a> (<a class="el" href="class_population.html">Population</a> &amp;t_pop, TH1F *t_data, TF1 *t_model, double t_Ndof)</td></tr>
-<tr class="memdesc:a16a1a916e5a8faa0cb0d208cd4e1a3c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the chi2/Ndof for each particle in the population <br  />
- <br  />
-  <a href="class_evaluate.html#a16a1a916e5a8faa0cb0d208cd4e1a3c7">More...</a><br /></td></tr>
+<tr class="memdesc:a16a1a916e5a8faa0cb0d208cd4e1a3c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the chi^2/NDOF for each particle in the population.  <a href="class_evaluate.html#a16a1a916e5a8faa0cb0d208cd4e1a3c7">More...</a><br /></td></tr>
 <tr class="separator:a16a1a916e5a8faa0cb0d208cd4e1a3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -126,9 +124,9 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Compute the chi2/Ndof using the coordinates of the current position of the particle as parameters in the model <br  />
+<p>Compute the chi^2/NDOF using the coordinates of the current position of the particle as parameters in the model. <br  />
  <br  />
- The chi2/Ndof is assigned to the particle as cost to be minimized </p>
+ The chi^2/NDOF is assigned to the particle as cost to be minimized. </p>
 
 </div>
 </div>
@@ -178,9 +176,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Compute the chi2/Ndof for each particle in the population <br  />
- <br  />
- </p>
+<p>Compute the chi^2/NDOF for each particle in the population. </p>
 
 </div>
 </div>

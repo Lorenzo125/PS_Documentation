@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Particle Swarm Fit: Population Class Reference</title>
+<title>Particle Swarm Optimization on Least Square Fitting: Population Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Particle Swarm Fit
+   <div id="projectname">Particle Swarm Optimization on Least Square Fitting
    </div>
   </td>
  </tr>
@@ -75,7 +75,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a52d0e4ded301b31dc11c1d1daf1663fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_population.html#a52d0e4ded301b31dc11c1d1daf1663fa">Population</a> (const <a class="el" href="class_config.html">Config</a> &amp;t_config)</td></tr>
-<tr class="memdesc:a52d0e4ded301b31dc11c1d1daf1663fa"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_population.html">Population</a> default constructor assigning the configuration <a class="el" href="class_config.html">Config</a>.  <a href="class_population.html#a52d0e4ded301b31dc11c1d1daf1663fa">More...</a><br /></td></tr>
+<tr class="memdesc:a52d0e4ded301b31dc11c1d1daf1663fa"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_population.html">Population</a> default constructor.  <a href="class_population.html#a52d0e4ded301b31dc11c1d1daf1663fa">More...</a><br /></td></tr>
 <tr class="separator:a52d0e4ded301b31dc11c1d1daf1663fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a2d5a08f446c0c6e14e0c60385087a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_population.html#a4a2d5a08f446c0c6e14e0c60385087a3">init</a> ()</td></tr>
 <tr class="memdesc:a4a2d5a08f446c0c6e14e0c60385087a3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_population.html">Population</a> initialization with random starting positions and random velocities.  <a href="class_population.html#a4a2d5a08f446c0c6e14e0c60385087a3">More...</a><br /></td></tr>
@@ -92,10 +92,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aabac78c1660156842135abfb68f39399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move all the particles into a new position.  <a href="class_population.html#aabac78c1660156842135abfb68f39399">More...</a><br /></td></tr>
 <tr class="separator:aabac78c1660156842135abfb68f39399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1adfcb402e6cd9d003e58c6a382d06c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_population.html#a1adfcb402e6cd9d003e58c6a382d06c4">setBestCost</a> ()</td></tr>
-<tr class="memdesc:a1adfcb402e6cd9d003e58c6a382d06c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the best cost for each particle if the new position is better.  <a href="class_population.html#a1adfcb402e6cd9d003e58c6a382d06c4">More...</a><br /></td></tr>
+<tr class="memdesc:a1adfcb402e6cd9d003e58c6a382d06c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the best position found for each particle.  <a href="class_population.html#a1adfcb402e6cd9d003e58c6a382d06c4">More...</a><br /></td></tr>
 <tr class="separator:a1adfcb402e6cd9d003e58c6a382d06c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5b9d7dd3b82a6a21d43b43c1150acae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_population.html#ae5b9d7dd3b82a6a21d43b43c1150acae">draw</a> (TH1F *t_data, TF1 *t_model)</td></tr>
-<tr class="memdesc:ae5b9d7dd3b82a6a21d43b43c1150acae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show on display the model with the best set of parameter found and the normalized data in the background.  <a href="class_population.html#ae5b9d7dd3b82a6a21d43b43c1150acae">More...</a><br /></td></tr>
+<tr class="memdesc:ae5b9d7dd3b82a6a21d43b43c1150acae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show on display the model with the best set of parameter found and the normalized data on the background.  <a href="class_population.html#ae5b9d7dd3b82a6a21d43b43c1150acae">More...</a><br /></td></tr>
 <tr class="separator:ae5b9d7dd3b82a6a21d43b43c1150acae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4f4e98fe36a1d16348fcaa4b55c338b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_config.html">Config</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_population.html#aa4f4e98fe36a1d16348fcaa4b55c338b">getConfig</a> ()</td></tr>
 <tr class="memdesc:aa4f4e98fe36a1d16348fcaa4b55c338b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the configuration of the population.  <a href="class_population.html#aa4f4e98fe36a1d16348fcaa4b55c338b">More...</a><br /></td></tr>
@@ -119,6 +119,7 @@ Private Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a50bf2d69e02685712d6fc4cd5a1de1d5"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_population.html#a50bf2d69e02685712d6fc4cd5a1de1d5">operator&lt;&lt;</a> (std::ostream &amp;t_os, <a class="el" href="class_population.html">Population</a> &amp;t_rhs)</td></tr>
+<tr class="memdesc:a50bf2d69e02685712d6fc4cd5a1de1d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show on video the coordinates of the best position found.  <a href="class_population.html#a50bf2d69e02685712d6fc4cd5a1de1d5">More...</a><br /></td></tr>
 <tr class="separator:a50bf2d69e02685712d6fc4cd5a1de1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -138,7 +139,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_population.html">Population</a> default constructor assigning the configuration <a class="el" href="class_config.html">Config</a>. </p>
+<p><a class="el" href="class_population.html">Population</a> default constructor. </p>
 
 </div>
 </div>
@@ -197,7 +198,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Show on display the model with the best set of parameter found and the normalized data in the background. </p>
+<p>Show on display the model with the best set of parameter found and the normalized data on the background. </p>
 
 </div>
 </div>
@@ -309,7 +310,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the best cost for each particle if the new position is better. </p>
+<p>Update the best position found for each particle. </p>
 
 </div>
 </div>
@@ -346,7 +347,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the number of particles in the population <br  />
+<p>Return the number of particles in the population. <br  />
  <br  />
  Referenced by <a class="el" href="class_evaluate.html#aa98fc7a4103f1da81bdcf00550589f8a">Evaluate::computeCostFit()</a> </p>
 
@@ -405,7 +406,8 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Show on video the current position, the best position and the best cost for the <em>0</em> - particle (the one that has found the best global solution) </p>
+
+<p>Show on video the coordinates of the best position found. </p>
 
 </div>
 </div>
@@ -429,7 +431,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Configuration used in the population </p>
+<p>Configuration used in the population. </p>
 
 </div>
 </div>
@@ -452,7 +454,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Random number generator </p>
+<p>Random number generator. </p>
 
 </div>
 </div>
@@ -475,7 +477,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Vector of particles that compose the population </p>
+<p>Vector of particles (the population). </p>
 
 </div>
 </div>
