@@ -1,2 +1,1 @@
-# PS_Documentation
-Description of PS code
+# Particle Swarm Optimization on Least Square Fitting - Documentation
