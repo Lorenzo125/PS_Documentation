@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['init',['init',['../class_population.html#a4a2d5a08f446c0c6e14e0c60385087a3',1,'Population']]]
+  ['factor_13',['factor',['../_readme_8txt.html#a291deaca832107972af88d0a298c93f2',1,'Readme.txt']]]
 ];

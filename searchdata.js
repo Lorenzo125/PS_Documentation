@@ -1,12 +1,13 @@
 var indexSectionsWithContent =
 {
-  0: "acdegimoprs",
+  0: "_acdefgimopqrs",
   1: "cep",
-  2: "cepr",
+  2: "cdepr",
   3: "acdgimops",
-  4: "m",
+  4: "_fmq",
   5: "o",
-  6: "p"
+  6: "e",
+  7: "p"
 };
 
 var indexSectionNames =
@@ -17,7 +18,8 @@ var indexSectionNames =
   3: "functions",
   4: "variables",
   5: "related",
-  6: "pages"
+  6: "defines",
+  7: "pages"
 };
 
 var indexSectionLabels =
@@ -28,6 +30,7 @@ var indexSectionLabels =
   3: "Functions",
   4: "Variables",
   5: "Friends",
-  6: "Pages"
+  6: "Macros",
+  7: "Pages"
 };
 

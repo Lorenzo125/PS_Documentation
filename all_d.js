@@ -1,6 +1,19 @@
 var searchData=
 [
-  ['updatebestcost',['UpdateBestCost',['../class_population.html#a379cd709822ebc2481cbd725bca25b65',1,'Population']]],
-  ['updatemodel',['UpdateModel',['../class_particle.html#a9ec684cbff7260fa3e9bccc4e7da398c',1,'Particle']]],
-  ['updatevelocities',['UpdateVelocities',['../class_population.html#ae8ea6f855733ba56313f1d5246e62f2e',1,'Population']]]
+  ['setbestcost_68',['setBestCost',['../class_population.html#a1adfcb402e6cd9d003e58c6a382d06c4',1,'Population']]],
+  ['setbestposition_69',['setBestPosition',['../class_particle.html#a399e6c46240fad8b3ba899303ed36594',1,'Particle']]],
+  ['setcognitiveparameter_70',['setCognitiveParameter',['../class_config.html#a7f7eac46197baacb4bbde0e36b47039d',1,'Config']]],
+  ['setcost_71',['setCost',['../class_particle.html#a6b1a06ce1da037c4c391b6f5861b04f5',1,'Particle']]],
+  ['setinertia_72',['setInertia',['../class_config.html#a57c779eeeb1b501abbd116931158cbd4',1,'Config']]],
+  ['setmodel_73',['setModel',['../class_particle.html#a800422109fbfbfc7de3b50f05c523ffc',1,'Particle']]],
+  ['setmodelbest_74',['setModelBest',['../class_particle.html#ada49071bb9db0b3078edf92998d7d7df',1,'Particle']]],
+  ['setnumberofparticles_75',['setNumberOfParticles',['../class_config.html#aa49c9fd480968c6885ca1ba6cfdb0fee',1,'Config']]],
+  ['setparameterdomain_76',['setParameterDomain',['../class_parameters_domain.html#ac43ed7fe0937c9e777b9803bdfa269b8',1,'ParametersDomain']]],
+  ['setparametersdomain_77',['setParametersDomain',['../class_config.html#a56e332b785488630651c3fb7f0111ca4',1,'Config']]],
+  ['setposition_78',['setPosition',['../class_particle.html#aa2ae8b28758b4334e38319849555f5a4',1,'Particle']]],
+  ['setsocialparameter_79',['setSocialParameter',['../class_config.html#aa4c56682eb03de5a6af87a16f7217f68',1,'Config']]],
+  ['setvelocity_80',['setVelocity',['../class_particle.html#a41ea9fe8f8fd76a05c9e03ae77003781',1,'Particle::setVelocity()'],['../class_population.html#ab68605613683cadc3cd0952dd060b892',1,'Population::setVelocity()']]],
+  ['setvmaxparameter_81',['setVMaxParameter',['../class_config.html#a7e7425f030ce1cee3747288344aafc81',1,'Config']]],
+  ['size_82',['size',['../class_population.html#a71a9278adc6877d0184afddbf0830467',1,'Population']]],
+  ['sort_83',['sort',['../class_population.html#aee1e5343d88cbfb4594dde4b0e6bb574',1,'Population']]]
 ];
